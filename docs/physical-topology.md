@@ -1,28 +1,28 @@
-Physical Topology Design
+# Physical Topology Design
 
-Client: Dikgatlong Adventure Tourism (Kimberley)
+## Client: Dikgatlong Adventure Tourism (Kimberley)
 
-Building Layout & Device Placement
+## Building Layout & Device Placement
 
- Floor 1 (Ground Floor) - Public/Staff Area
+### Floor 1 (Ground Floor) - Public/Staff Area
 - **Staff Workstations (2-3 PCs):** Located in the main office area.
 - **Guest Wi-Fi Access:** Simulated by a PC in the reception area.
 - **Network Cabling:** Uses existing building risers to connect to the communications room.
 
- Floor 2 (Server/Management Area)
+### Floor 2 (Server/Management Area)
 - **Server Room:** Contains the main business server (booking system, email, files).
 - **Communications Room:** Contains the edge router and core switch.
 
- Cable Path (Shared Risers)
+### Cable Path (Shared Risers)
 All cables run through **existing vertical risers** between floors. No new cabling is installed.
 - Floor 2 (Comms Room) → Riser → Floor 1 (Staff Area)
 - Floor 2 (Comms Room) → Riser → Floor 1 (Reception)
 
- Constraint: Shared Risers, No Civil Works
+## Constraint: Shared Risers, No Civil Works
 - **Constraint:** The organisation rents part of the building. New cabling or infrastructure changes are not allowed.
 - **Solution:** Use existing network risers to connect devices between floors. All cabling uses standard copper cables available in the existing infrastructure.
 
- Device Inventory
+## Device Inventory
 
 | Device | Model | Quantity | Location | Purpose |
 |--------|-------|----------|----------|---------|
