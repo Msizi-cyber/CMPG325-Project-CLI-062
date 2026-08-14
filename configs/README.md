@@ -4,7 +4,7 @@ This folder will contain the running configurations for all network devices afte
 
  Planned Configurations
 
-1. Edge Router Configuration** - `edge-router-config.txt`
+1. **Edge Router Configuration** - `edge-router-config.txt`
 2. Core Switch Configuration** - `core-switch-config.txt`
 3. ISP Router Configuration** - `isp-router-config.txt`
 
