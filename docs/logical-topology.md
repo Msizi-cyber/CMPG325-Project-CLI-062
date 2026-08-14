@@ -1,12 +1,13 @@
- Logical Topology Design
+# Logical Topology Design
 
- Client: Dikgatlong Adventure Tourism (Kimberley)
+## Client: Dikgatlong Adventure Tourism (Kimberley)
 
- Overview
+## Overview
 The logical topology defines how data flows through the network, including VLAN segmentation, IP addressing, routing, and security.
 
+---
 
- VLAN Structure
+## VLAN Structure
 
 | VLAN ID | VLAN Name | Subnet | Host Range | Purpose |
 |---------|-----------|--------|------------|---------|
@@ -15,13 +16,14 @@ The logical topology defines how data flows through the network, including VLAN 
 | 30 | Servers | 192.168.33.32/28 | 192.168.33.33 - 46 | Business servers |
 | 40 | Guest | 192.168.33.48/28 | 192.168.33.49 - 62 | Guest Wi-Fi access |
 
+---
 
- Inter-VLAN Routing
+## Inter-VLAN Routing
 - **Method:** Router-on-a-Stick (ROAS) using the edge router.
 - **Sub-interfaces:** Each VLAN has a sub-interface on the edge router's Gig0/0 interface.
 - **Benefits:** Centralizes routing, simplifies management, and improves security.
 
- Router-on-a-Stick Configuration
+### Router-on-a-Stick Configuration
 
 | Interface | VLAN | IP Address | Description |
 |-----------|------|------------|-------------|
@@ -30,10 +32,11 @@ The logical topology defines how data flows through the network, including VLAN 
 | Gig0/0.30 | VLAN 30 | 192.168.33.33/28 | Server Gateway |
 | Gig0/0.40 | VLAN 40 | 192.168.33.49/28 | Guest Gateway |
 
+---
 
- Default Routing (Edge/ISP Path Design)
+## Default Routing (Edge/ISP Path Design)
 
- Default Route Configuration
+### Default Route Configuration
 The edge router has a default route (gateway of last resort) pointing to the ISP router.
 
 ```cisco
